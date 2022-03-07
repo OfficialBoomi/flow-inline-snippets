@@ -7,7 +7,6 @@ const DateTimeMMDDYYHHMM = function DateTimeMMDDYYHHMM(props) {
        hour: '2-digit',
        minute: '2-digit'
    }).format(new Date(timestamp));
-   //   if imgString.length != null return;
    if (timestamp != null && timestamp.length > 0) {
        return React.createElement("span", {
            class: "timestamp"
