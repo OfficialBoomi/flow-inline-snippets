@@ -1,6 +1,6 @@
-const DateTimeMMDDYYHHMM = function DateTimeMMDDYYHHMM(props) {
+const DateTime = function DateTime (props) {
    let timestamp = props.contentValue;
-   let dt = new Intl.DateTimeFormat('en-US', {
+   let dt = new Intl.DateTimeFormat('en-GB', {
        year: 'numeric',
        month: 'numeric',
        day: '2-digit',
@@ -15,4 +15,4 @@ const DateTimeMMDDYYHHMM = function DateTimeMMDDYYHHMM(props) {
    return null;
 };
 
-manywho.component.register('DateTimeMMDDYYHHMM', DateTimeMMDDYYHHMM);
+manywho.component.register('DateTime', DateTime);
