@@ -2,7 +2,7 @@ const DateTime = function DateTime (props) {
    let timestamp = props.contentValue;
    let dt = new Intl.DateTimeFormat('en-GB', {
        year: 'numeric',
-       month: 'numeric',
+       month: 'short',
        day: '2-digit',
        hour: '2-digit',
        minute: '2-digit'
